@@ -1,0 +1,251 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<style>
+<!-- style defs -->
+
+a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: grey;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1200px;
+  margin: auto;
+}
+
+h1 {
+  color: #FA7309;
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column  */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+
+.column {
+  float: left;
+  
+ 
+}
+
+.left {
+  width: 90%;
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+/* Layout: make 2 cols */
+@media screen and (max-width: 800px) {
+  .column {
+    width: 44%;
+  }
+}
+
+/* Layout: make 1 column */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 88%;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<div class="w3-top">
+  <div class="w3-bar w3-light-grey w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="./projects.html" class="w3-bar-item w3-button w3-padding-large">PROJECTS</a>
+    <a href="http://nadjaalthaus.org" class="w3-bar-item w3-button w3-padding-large w3-hide-small">HOME</a>
+     <!--<div class="w3-dropdown-hover w3-hide-small"> -->
+     <!-- <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>   -->  
+      <!--<div class="w3-dropdown-content w3-bar-block w3-card-4">-->
+        <!--<a href="#" class="w3-bar-item w3-button">Merchandise</a>-->
+        <!--<a href="#" class="w3-bar-item w3-button">Extras</a>-->
+        <!--<a href="#" class="w3-bar-item w3-button">Media</a>-->
+      <!--</div>
+   <!-- </div>
+   <!-- <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>-->
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">RESEARCH</a>
+  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PROJECTS</a>
+  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PUBLICATIONS</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CV</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">LAB</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+</div>
+
+
+<!-- project list -->
+<div class="main">
+
+
+<br>
+<br>
+<br>
+
+<div class="column left">
+
+<h2>What is the nature of babies’ first word representations?</h2>
+
+
+
+<br>
+
+
+<br>
+<br>
+<h4> The problem </h4>
+
+Word recognition is a complex task: On the one hand, we don’t want to confuse similar words 
+such as “pat” and “bat”. On the other hand, we need a lot of flexibility to cope with 
+different speakers’ individual voice, different accents and with environmental noise. 
+So our mental representation of what a word like “dog” should sound like needs to be 
+exactly at the right level of specificity.
+When children first learn words, to they store them in their mental lexicon with all 
+the detail adults represent, or do they perhaps only store coarse representations? 
+Such an “underspecified” lexical entry might easily be misrecognized.
+
+However, according to the linguistic theory of the Featurally Underspecified Lexicon 
+(FUL, Lahiri & Reetz, 2010)  even adults have underspecified lexical representations. 
+Specifically, the theory predicts that so-called coronal sounds like [n],[t],[d],[s] 
+that are produced with the “corona”of the tongue, the outer edge, are underspecified 
+in order to deal with variability in speech. For instance:
+
+Rainbow is pronounced as [re&#618;<b>m</b>bo&#650;]
+Rain coat is pronounced as [re&#618;<b>&#331;</b>ko&#650;t]
+
+These so called ‘assimilation’ patterns occur across many languages, and assimilation 
+happens for coronals but not noncoronals (e.g. ).
+
+
+
+<h4> The study </h4>
+Using a visual world paradigm with eye tracking we tested 18- and 24-month-olds on their 
+recognition for words starting with coronal sounds vs. noncoronal sounds. If their 
+coronals are indeed underspecified, they should not be sensitive for mispronunciation – 
+e.g. they should recognise both [dog] and [bog] to mean “dog”. 
+<br><br>
+<img src="underspec_fig1.png" width=80%><br>
+Figure 1. Sample stimuli: pairs of "novel" and "familiar" items.
+<br><br>
+
+We showed children pairs of the familiar target (e.g. duck, bear) and a “novel” 
+object/animal (see Figure 1), and just before the pictures came up on the screen, the children 
+heard either the accurate label for the familiar picture (duck/bear) OR a mispronounced 
+version (*buck/*dare).
+If infants noticed the mispronunciation, they should be more likely to look at the 
+novel image (as that is a potential referent for a novel word). Therefore, if coronals 
+are underspecified (but noncoronals are fully specified), there should be a difference 
+between words that start with a coronal vs. those that start with a non-coronal sound:
+
+For coronals like duck, dog, door we expect no or less mispronunciation sensitivity 
+than for noncoronals like bear, bird, book (for which children should notice mispronunciations).
+
+<br>
+
+<h4> Results</h4>
+Overall we found that children noticed mispronunciations: they looked less at the 
+target if the word was pronounced accurately (p=.011). Their overall looking proportions 
+did not show differences between coronal-onset words and non-coronal onset words. 
+
+However, we can get much clearer insight into word processing if we examine the time 
+course of looking across the entire trial. When the pictures are shown, children either 
+start at the target or the novel item. If the picture matches what they heard, they tend 
+to stay there, but if it doesn’t, they move their eyes to the other picture. In 
+consequence, differences between looking patterns on trials with an accurate vs. 
+mispronounced auditory item tell us to what extent the children were sensitive to the
+ mispronunciation.
+
+Figure 2 shows looking patterns for those trials on which the familiar item was first 
+looked at (results from novel-first trials overall show a consistent pattern).
+<br><br>
+
+
+<img src="underspec_fig2.png" width=60%><br>
+Figure 2. Looking patterns for "familiar first" trials by age (18 vs. 24 months) and word group (coronal vs. noncoronal onset)
+<br>
+<br>
+<h4> Modelling Approach </h4>
+
+We used growth curve analysis (logistic mixed effects models, Mirman, 2014) to 
+determine which of the curves were statistically different from each other. To this 
+end we fitted 3rd order polynomials first in a base model that only contained the 
+polynomial time terms, then added fixed effects and conducted a model comparison 
+after every step, and finally ran posthoc comparisons to determine which conditions 
+showed a mispronunciation effect. The best-fit model (for familiar-first trials) 
+included 3-way interactions of Age, Condition and Onset sound (p<.0001). Posthoc 
+tests showed that 18-month-olds had a clear mispronunciation effect for all onset 
+sounds, i.e. no asymmetry and therefore no underspecification. By contrast, 
+24-month-olds’ looking patterns showed an onset-effect: For noncoronal words, the 
+toddlers were sensitive to mispronunciation (i.e. “dare” is not “bear”). But for 
+coronal words, the looking patterns were not statistically different.
+
+
+<br>
+<h4> Conclusion </h4>
+
+The implication is that children indeed appear to “underspecify” lexical entries for 
+coronal sounds, and this likely enables dealing with assimilation. However, the really 
+interesting finding here is that this was found only with older children and not at 
+18 months. That means it is the result of experience with language – in this case, 
+experience of hearing words in different contexts (such as “rain” in rainbow and 
+rain coat, pronounced as [m] and [&#331;]). 
+<h4> References </h4>
+<p>Lahiri, A., & Reetz, H. (2010). Distinctive features: Phonological underspecification in 
+representation and processing. Journal of Phonetics, 38(1), 44–59. https://doi.org/10.1016/j.wocn.2010.01.002
+
+<p>Mirman, D. (2014). Growth curve analysis and visualization using R. Boca Raton, FL: CRC Press / Taylor & Francis Group.
+<br>
+<br>
+</div>
+</body>
+</html>

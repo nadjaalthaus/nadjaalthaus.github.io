@@ -1,0 +1,187 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<style>
+<!-- style defs -->
+
+
+
+a {
+  color: black;
+}
+
+a:visited {
+  color: grey;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1200px;
+  margin: auto;
+}
+
+h1 {
+  color: #FA7309;
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column  */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that float next to each other */
+.column {
+  float: left;
+  width: 22%;
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+/* Layout: make 2 cols */
+@media screen and (max-width: 800px) {
+  .column {
+    width: 44%;
+  }
+}
+
+/* Layout: make 1 column */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 88%;
+  }
+}
+
+</style>
+</head>
+<body>
+
+
+<div class="w3-top">
+  <div class="w3-bar w3-light-grey w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="./p1.html" class="w3-bar-item w3-button w3-padding-large">PROJECTS</a>
+    <a href="http://nadjaalthaus.org" class="w3-bar-item w3-button w3-padding-large w3-hide-small">HOME</a>
+     <!--<div class="w3-dropdown-hover w3-hide-small"> -->
+     <!-- <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>   -->  
+      <!--<div class="w3-dropdown-content w3-bar-block w3-card-4">-->
+        <!--<a href="#" class="w3-bar-item w3-button">Merchandise</a>-->
+        <!--<a href="#" class="w3-bar-item w3-button">Extras</a>-->
+        <!--<a href="#" class="w3-bar-item w3-button">Media</a>-->
+      <!--</div>
+   <!-- </div>
+   <!-- <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>-->
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">RESEARCH</a>
+  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PROJECTS</a>
+  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PUBLICATIONS</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CV</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">LAB</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+</div>
+
+
+
+<!-- project list -->
+<div class="main">
+<br>
+<br>
+<h1>Nadja Althaus</h1>
+<br>
+<br>
+<br>
+
+
+<h2>CURRENT AND RECENT PROJECTS </h2>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+ <div class="column">
+    <div class="content">
+      <a href="./lstm_projpost.html"><img src="lstm_title.png" alt="TSNE visualisation of Swedish accent data" style="width:100%"></a>
+      <h3><a href="./lstm_projpost.html">Speech corpus analysis with deep networks (LSTMs)</a></h3>
+      <p>A current projects investigates the use of LSTM deep neural networks to classify prosodic patterns, and in the first
+    instance this is applied to identifying pitch accent patterns in a Swedish speech corpus.
+      This sheds light on the production of each type of pitch accent in every-day language.  </p>
+    </div>
+  </div>
+<div class="column">
+    <div class="content">
+      <a href="./orthography_projpost.html"><img src="orthography_title.png" alt="Time course model plot" style="width:100%"></a>
+      <h3><a href="./orthography_projpost.html">Orthography and the sound of words in our minds</a></h3>
+      To what extent does the spelling of a word affect our mental representation of its 
+      sounds? Here we used a regular case of vowel raising in Bengali, which sometimes is and sometimes
+      isn't reflected in writing, to investigate how spelling and sound changes each affect
+      the speed of word processing. We used growth curves to examine participants' eye movements
+      in a fragment completion task.
+      </p>
+    </div>
+  </div>
+   <div class="column">
+  
+    <div class="content">
+      <a href="./underspec_projpost.html"><img src="underspec_title.png" alt="Time course plot with stimuli" style="width:100%"></a>
+      <h3><a href="./underspec_projpost.html">The nature of babies' first word representations</a></h3>
+      <p>Do children store every detail of the sound of a new word, or just as much detail
+      as is necessary to discriminate it from other words they know? Our eye tracking 
+      project looks at
+      how 18- and 24-month-olds process words with coronal sounds like [n], [d], [t], as 
+      evidence from adults suggests we have to be particularly flexible with this 
+      category of consonants.</p>
+    </div>
+  </div>
+ 
+  
+  
+  
+  
+ 
+</div>
+
+
+ 
+
+<!-- END MAIN -->
+</div>
+
+</body>
+</html>

@@ -1,0 +1,245 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<style>
+<!-- style defs -->
+
+a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: grey;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1200px;
+  margin: auto;
+}
+
+h1 {
+  color: #FA7309;
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column  */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+
+.column {
+  float: left;
+  
+ 
+}
+
+.left {
+  width: 90%;
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+/* Layout: make 2 cols */
+@media screen and (max-width: 800px) {
+  .column {
+    width: 44%;
+  }
+}
+
+/* Layout: make 1 column */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 88%;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<div class="w3-top">
+  <div class="w3-bar w3-light-grey w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="./p1.html" class="w3-bar-item w3-button w3-padding-large">PORTFOLIO</a>
+    <a href="http://nadjaalthaus.org" class="w3-bar-item w3-button w3-padding-large w3-hide-small">HOME</a>
+     <!--<div class="w3-dropdown-hover w3-hide-small"> -->
+     <!-- <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>   -->  
+      <!--<div class="w3-dropdown-content w3-bar-block w3-card-4">-->
+        <!--<a href="#" class="w3-bar-item w3-button">Merchandise</a>-->
+        <!--<a href="#" class="w3-bar-item w3-button">Extras</a>-->
+        <!--<a href="#" class="w3-bar-item w3-button">Media</a>-->
+      <!--</div>
+   <!-- </div>
+   <!-- <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>-->
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">RESEARCH</a>
+  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PROJECTS</a>
+  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PUBLICATIONS</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CV</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">LAB</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+</div>
+
+
+<!-- project list -->
+<div class="main">
+
+
+<br>
+<br>
+<br>
+
+<div class="column left">
+
+<h2>How does orthography affect the way word sounds are represented in our minds?</h2>
+
+
+<h4>Paper: <a href=https://www.sciencedirect.com/science/article/pii/S0010027721003863>Althaus, Kotzor, Schuster & Lahiri (2022). <i>Cognition</i></a></h4>
+<h4>Code (Eye tracking data preprocessing in Python and modelling in R): <a href=https://github.com/nadjaalthaus/ET> Github</a></h4>
+
+
+<br>
+
+<img src="bengali_eyemovements.png" width=80%><br>
+Figure1. Eye movement patterns for three types of verbs in the fragment completion paradigm (Shaded areas reflect standard error of the mean).
+<br>
+<br>
+<h4> The problem </h4>
+
+<p> In many languages there are words like “two” vs. “too” and “toe” vs. “tow” that sound 
+the same but differ in spelling. How does this affect our mental representations of them? 
+Similarly there are words that sound different even though their spelling is the same, e.g. “read” 
+(present tense, [ri:d]) vs. “read” (past tense, [r&#603;d]).
+
+The difficulty in examining these mental representations, and how phonology and orthography 
+interact, is that such cases are not numerous.
+
+
+
+<h4> The study </h4>
+In Bengali verb inflection there is a completely regular vowel raising process that allows
+ us to investigate this systematically. In Bengali the first and third person singular either 
+ have the same or a raised stem vowel. For instance, ‘mare’ (s/he hits) becomes ‘mari’ 
+ (I hit; no stem vowel raising, merely the suffix changes to indicate 1st Person), 
+ but kh&aelig;le ‘he/she plays’ changes to kheli ‘I play’ (i.e. here the [&aelig;] 
+ is raised to [e] in the first person), and similarly for lekhe/likhi (s/he writes / I write) 
+ the stem vowel is also raised. Most importantly, only the e-i alternation (but not the &aelig;-e 
+ alternation) is reflected in a spelling change (i.e. ae and e in khaele, kheli have the same Bengali 
+ spelling).
+
+
+<br>
+This gave us a way to test how speakers of Bengali represent these sounds in the mental 
+lexicon with a "fragment completion task": we played them the first syllable of a verb (e.g. 
+kh&aelig;- or khe-) and their task was to determine whether this came from kh&aelig;le or from kheli. 
+For their response, they saw both options written in Bengali letters on a screen and were asked 
+to press a button corresponding to the target – but we also recorded their eye movements 
+with an eye tracker.
+
+
+<h4> Results</h4>
+We expected participants to be unable to decide when hearing “ma”, because “mari” and 
+“mare” share the stem vowel. That’s exactly what we found.
+By contrast, we expected participants to find this easy whenever the stem vowel changes 
+(either from [&aelig;] to [e], or from [e] to [i]). Any differences between pairs like 
+kh&aelig;le/kheli (no spelling change) and lekhi/likhi (spelling change) should then be 
+attributed to the impact of orthography, because the differences in vowel are 
+perceptually similar in both cases.
+
+However, it turns out that participants were really good at performing the task for the 
+lekhe/likhi group of words (with a spelling difference), but surprisingly bad at finding 
+the correct answer for the khaele/khele-type words (where there is no difference in spelling). 
+In fact, their manual responses for these words were at chance – only their eye movements 
+showed that in fact they could solve the question. Apparently spelling has a really big 
+impact on how we “hear” sounds. 
+
+
+
+
+<br>
+
+We determined this by examining the time course of looking from the first target the 
+partcipant looked at. In general, if the target is seen first, participants tend to 
+stay there, whereas if the distracter is seen first, they move away to the other item – 
+but when we compare trials on which the subject started at target vs. distracter, 
+the distance between those data plots tells us how easy they found it to decide: 
+If the plots are close together, they could not decide (target/distracter lead to 
+the same responses), whereas if they are far apart, they found it easy (they looked at 
+the target more than the distracter).
+<br>
+<h4> Modelling Approach </h4>
+
+Statistically, to determine whether the eye movement patterns were distinct, we used a growth
+curve approach (Mirman, 2014). This involves fitting 
+polynomials to the time course data (using lme4 in R and logistic models) and 
+successively added fixed effects to the base model. Model comparisons then showed that 
+all three word types were different from each other; for the mare-mari group of words 
+there was no difference between target-first and distracter-first (i.e. subjects had to guess), 
+but both kh&aelig;le-kheli and lekhe-lekhi word groups were discriminated. It’s also clear, 
+though, that the participants found the decision much easier for lekhe-lekhi 
+(large distance, even early on) than for kh&aelig;le-kheli (small distance throughout). 
+
+
+<br>
+<h4> Conclusion </h4>
+
+What the results overall mean is that orthography affects our mental representations 
+of phonological patterns. We believe that exposure to the differences in spelling over 
+and over again (and the need to produce the correct spelling in writing) means that the 
+mental representation of those word forms become more distinct. Where there is no spelling 
+change, the mental representations for 1st and 3rd person forms overlap to a large extent, 
+which makes them confusable. In this experiment, once the mental representation is activated, 
+memory for the acoustic input decays rapidly, and this may mean that both forms seem like good 
+competitors for those items where the mental representation overlaps.
+
+
+<h4> References </h4>
+Mirman, D. (2014). Growth curve analysis and visualization using R. Boca Raton, FL: CRC Press / Taylor & Francis Group.
+<br>
+<br>
+</div>
+</body>
+</html>
